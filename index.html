@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Launchpad </title>
+    <link rel="icon" type="image/x-icon" href="html/src/assets/img/favicon.ico"/>
+    <link href="html/layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="html/layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <script src="html/layouts/vertical-dark-menu/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="html/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="html/layouts/vertical-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="html/layouts/vertical-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="html/src/plugins/src/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="html/src/assets/css/light/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <link href="html/src/assets/css/dark/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="html/vertical-dark-menu/assets/css/style.css">
+
+   
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+</head>
+<body class="layout-boxed">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen"> <div class="loader"> <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+    </div></div></div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container container-xxl">
+        <header class="header navbar navbar-expand-sm expand-header">
+
+            <ul class="navbar-item theme-brand flex-row  text-center">
+                <li class="nav-item theme-logo">
+                    <a href="index.html">
+                        <img src="html/src/assets/img/logo2.svg" >
+                    </a>
+                </li>
+                <li class="nav-item theme-text">
+                    <a href="index.html" class="nav-link"> Launchpad </a>
+                </li>
+            </ul>
+
+            <div class="search-animated toggle-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <form class="form-inline search-full form-inline search" role="search">
+                    <div class="search-bar">
+                        <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
+                </form>
+                <span class="badge badge-secondary">Ctrl + /</span>
+            </div>
+
+        
+
+            <ul class="navbar-item flex-row ms-lg-auto ms-0 action-area">
+
+                <li class="nav-item theme-toggle-item">
+                    <a href="javascript:void(0);" class="nav-link theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon dark-mode"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun light-mode"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown notification-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="badge badge-success"></span>
+                    </a>
+
+
+                    
+
+                    <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
+                        <div class="drodpown-title message">
+                            <h6 class="d-flex justify-content-between"><span class="align-self-center">Messages</span> <span class="badge badge-primary">9 Unread</span></h6>
+                        </div>
+                        <div class="notification-scroll">
+                            <div class="dropdown-item">
+                                <div class="media server-log">
+                                    <img src="html/src/assets/img/profile-16.jpeg" class="img-fluid me-2" alt="avatar">
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Kara Young</h6>
+                                            <p class="">1 hr ago</p>
+                                        </div>
+                                        
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            <div class="dropdown-item">
+                                <div class="media ">
+                                    <img src="html/src/assets/img/profile-15.jpeg" class="img-fluid me-2" alt="avatar">
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Daisy Anderson</h6>
+                                            <p class="">8 hrs ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media file-upload">
+                                    <img src="html/src/assets/img/profile-21.jpeg" class="img-fluid me-2" alt="avatar">
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Oscar Garner</h6>
+                                            <p class="">14 hrs ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="drodpown-title notification mt-2">
+                                <h6 class="d-flex justify-content-between"><span class="align-self-center">Notifications</span> <span class="badge badge-secondary">16 New</span></h6>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media server-log">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Server Rebooted</h6>
+                                            <p class="">45 min ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media file-upload">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Kelly Portfolio.pdf</h6>
+                                            <p class="">670 kb</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Licence Expiring Soon</h6>
+                                            <p class="">8 hrs ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </li>
+
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="" class="btn ml-lg-auto btn-bordered-white"><i class="icon-wallet mr-md-2"></i> Connect</a>             
+                </li>
+                
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+
+                <div class="navbar-nav theme-brand flex-row  text-center">
+                    <div class="nav-logo">
+                        <div class="nav-item theme-logo">
+                            <a href="#">
+                                <img src="html/src/assets/img/logo.svg" class="navbar-logo" alt="logo">
+                          
+                            </a>
+                        </div>
+                        <div class="nav-item theme-text">
+                            <a href="#" class="nav-link"> Launchpad  </a>
+                        </div>
+                    </div>
+                    <div class="nav-item sidebar-toggle">
+                        <div class="btn-toggle sidebarCollapse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu active">
+                        <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                <span>Dashboard</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled show" id="dashboard" data-bs-parent="#accordionExample">
+                            <li class="active">
+                                <a href="#"> Analytics </a>
+                            </li>
+    
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>APPLICATIONS</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#apps" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                                <span>Apps</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="apps" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Calendar </a>
+                            </li>
+                            <li>
+                                <a href="#"> Chat </a>
+                            </li>
+                            <li>
+                                <a href="#"> Mailbox </a>
+                            </li>
+                            <li>
+                                <a href="#"> Todo List </a>
+                            </li>
+                            <li>
+                                <a href="#"> Notes </a>
+                            </li>
+                            <li>
+                                <a href="#"> Scrumboard </a>
+                            </li>
+                            <li>
+                                <a href="#"> Contacts </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>USER INTERFACE</span></div>
+                    </li>
+
+                    
+
+                
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                                <span>Launchpad</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
+                                <span>Widgets</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#layouts" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                                <span>Layouts</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="layouts" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Blank Page </a>
+                            </li>
+                            <li>
+                                <a href="#"> Empty Page </a>
+                            </li>
+                            <li>
+                                <a href="#"> Boxed </a>
+                            </li>
+                            <li>
+                                <a href="#"> Collapsed Menu </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>TABLES AND FORMS</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                                <span>Launchpad</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#datatables" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                <span>Launchpad</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="datatables" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Basic </a>
+                            </li>
+                            <li>
+                                <a href="#"> Striped </a>
+                            </li>
+                            <li>
+                                <a href="#"> Custom </a>
+                            </li>
+                            <li>
+                                <a href="#"> Miscellaneous </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#forms" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                                <span>Forms</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="forms" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Basic </a>
+                            </li>
+                            <li>
+                                <a href="#"> Input Group </a>
+                            </li>
+                            <li>
+                                <a href="#"> Layouts </a>
+                            </li>
+                            <li>
+                                <a href="#"> Validation </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>USER AND PAGES</span></div>
+                    </li>                    
+
+                    <li class="menu">
+                        <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                <span>Users</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="users" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Profile </a>
+                            </li>
+                            <li>
+                                <a href="#"> Account Settings </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#pages" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                                <span>Pages</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="pages" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Knowledge Base </a>
+                            </li>
+                            <li>
+                                <a href="#"> FAQ </a>
+                            </li>
+                            <li>
+                                <a href="#"> Contact Form </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> Error </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> Maintanence </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#authentication" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>Authentication</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="authentication" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#" target="_blank"> Sign In </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> Sign Up </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> Unlock </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> Reset </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"> 2 Step </a>
+                            </li>
+                          
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>MISCELLANEOUS</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#menuLevel1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                                <span>Item Level</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="menuLevel1" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Item Level 1a </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> Item Level 1b </a>
+                            </li>
+
+                            <li>
+                                <a href="#level-three" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed"> Item Level 1c <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="level-three" data-bs-parent="#pages"> 
+                                    <li>
+                                        <a href="javascript:void(0);"> Item Level 2a </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Item Level 2b </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Item Level 2c </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="menu">
+                        <a href="javascript:void(0);" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                                <span>Item Label</span>
+                                <span class="badge badge-primary sidebar-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle badge-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> New</span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                                <span>Documentation</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a  href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hash"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
+                                <span>Changelog</span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+
+                <div class="middle-content container-xxl p-0">
+
+                    <!--  BEGIN BREADCRUMBS  -->
+                    <div class="secondary-nav">
+                        <div class="breadcrumbs-container" data-page-heading="Analytics">
+                            <header class="header navbar navbar-expand-sm">
+                                <a href="javascript:void(0);" class="btn-toggle sidebarCollapse" data-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                                </a>
+                                <div class="d-flex breadcrumb-content">
+                                    <div class="page-header">
+
+                                        <div class="page-title">
+                                        </div>
+                        
+                                        <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Analytics</li>
+                                            </ol>
+                                        </nav>
+                        
+                                    </div>
+                                </div>
+                              
+                            </header>
+                        </div>
+                    </div>
+                    <!--  END BREADCRUMBS  -->
+                    
+                    <div class="row layout-top-spacing">     
+                        
+                        <section class="hero-section" id="about">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-9 text-center">
+                                        <!-- Hero Content -->
+                                        <div class="hero-content">
+                                            <div class="intro text-center mb-5">
+                                                <span class="intro-text">Launchpad </span>
+                                                <h1 class="mt-4">The Next Generation Web 3.0 IGO Launchpad</h1>
+                                                <p>Full-scale Blockchain Gaming Ecosystem for IGOs &amp; NFT Pre-Sales</p>
+                                            </div>
+                                            <!-- Buttons -->
+                                            <div class="button-group">
+                                                <a class="btn btn-bordered-white" href=""><i class="icon-rocket mr-2"></i>Explore IGOs</a>
+                                                <a class="btn btn-bordered-white" href=""><i class="icon-note mr-2"></i>Apply Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                         <!-- ***** Project Area Start ***** -->
+                            <section id="explore" class="project-area">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <!-- Intro -->
+                                            <div class="intro d-flex justify-content-between align-items-end m-0">
+                                                <div class="intro-content">
+                                                    <span class="intro-text">Project</span>
+                                                    <h3 class="mt-3 mb-0">Upcoming IGOs</h3>
+                                                </div>
+                                                <div class="intro-btn">
+                                                    <a class="btn content-btn" href="">View More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-slides">
+                                        <div class="swiper-container slider-mid items">
+                                            <div class="swiper-wrapper">
+                                                <!-- Single Slide -->
+                                                <div class="swiper-slide item">
+                                                    <div class="card project-card">
+                                                        <div class="media">
+                                                            <a href="">
+                                                                <img class="card-img-top avatar-max-lg" src="html/vertical-dark-menu/assets/img/cn.png" alt="">
+                                      
+                                                            </a>
+                                                            <div class="media-body ml-4">
+                                                                <a href="project-details.html">
+                                                                    <h4 class="m-0">Metaverse 3D</h4>
+                                                                </a>
+                                                                <div class="countdown-times">
+                                                                    <h6 class="my-2">Registration in:</h6>
+                                                                    <div class="countdown d-flex" data-date="2022-06-30"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Body -->
+                                                        <div class="card-body">
+                                                            <div class="items">
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Total raise</span>
+                                                                    <span style="color: white;">70k</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Valu</span>
+                                                                    <span style="color: white;">2.8M</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Min allo</span>
+                                                                    <span style="color: white;">$0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-progress">
+                                                                <div class="progress mt-4 mt-md-5">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                                </div>
+                                                                <div class="progress-sale d-flex justify-content-between mt-3">
+                                                                    <span style="color: white;">0/100,069 MECHA</span>
+                                                                    <span style="color: white;">0 BUSD</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Footer -->
+                                                        <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                                                            <a class="btn btn-bordered-white btn-smaller" href="">Participate</a>
+                                                            <!-- Social Share -->
+                                                            <div class="social-share ml-auto">
+                                                                <ul class="d-flex list-unstyled">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-telegram"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fas fa-globe"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-discord"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Blockchain Icon -->
+                                                        <div class="blockchain-icon">
+                                                            <img src="html/vertical-dark-menu/assets/img/content/ethereum.png" alt="">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Slide -->
+                                                <div class="swiper-slide item">
+                                                    <div class="card project-card">
+                                                        <div class="media">
+                                                            <a href="">
+                                                                <img class="card-img-top avatar-max-lg" src="html/vertical-dark-menu/assets/img/cn.png" alt="">
+                                                            </a>
+                                                            <div class="media-body ml-4">
+                                                                <a href="">
+                                                                    <h4 class="m-0">Pixel Pix</h4>
+                                                                </a>
+                                                                <div class="countdown-times">
+                                                                    <h6 class="my-2">Registration in:</h6>
+                                                                    <div class="countdown d-flex" data-date="2022-04-25"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Body -->
+                                                        <div class="card-body">
+                                                            <div class="items">
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Total raise</span>
+                                                                    <span style="color: white;">85k</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Valu</span>
+                                                                    <span style="color: white;">1.9M</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Min allo</span>
+                                                                    <span style="color: white;">$0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-progress">
+                                                                <div class="progress mt-4 mt-md-5">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">8%</div>
+                                                                </div>
+                                                                <div class="progress-sale d-flex justify-content-between mt-3">
+                                                                    <span style="color: white;">0/94,752 MECHA</span>
+                                                                    <span style="color: white;">0 BUSD</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Footer -->
+                                                        <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                                                            <a class="btn btn-bordered-white btn-smaller" href="">Participate</a>
+                                                            <!-- Social Share -->
+                                                            <div class="social-share ml-auto">
+                                                                <ul class="d-flex list-unstyled">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-telegram"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fas fa-globe"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-discord"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Blockchain Icon -->
+                                                        <div class="blockchain-icon">
+                                                            <img src="html/vertical-dark-menu/assets/img/content/binance.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Slide -->
+                                                <div class="swiper-slide item">
+                                                    <div class="card project-card">
+                                                        <div class="media">
+                                                            <a href="">
+                                                                <img class="card-img-top avatar-max-lg" src="html/vertical-dark-menu/assets/img/cn.png" alt="">
+                                                            </a>
+                                                            <div class="media-body ml-4">
+                                                                <a href="">
+                                                                    <h4 class="m-0">Cyber City</h4>
+                                                                </a>
+                                                                <div class="countdown-times">
+                                                                    <h6 class="my-2">Registration in:</h6>
+                                                                    <div class="countdown d-flex" data-date="2022-05-18"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Body -->
+                                                        <div class="card-body">
+                                                            <div class="items">
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Total raise</span>
+                                                                    <span style="color: white;">69k</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Valu</span>
+                                                                    <span style="color: white;">3.2M</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Min allo</span>
+                                                                    <span style="color: white;">$0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-progress">
+                                                                <div class="progress mt-4 mt-md-5">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 12%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">12%</div>
+                                                                </div>
+                                                                <div class="progress-sale d-flex justify-content-between mt-3">
+                                                                    <span style="color: white;">0/87,074 MECHA</span>
+                                                                    <span style="color: white;">0 BUSD</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Footer -->
+                                                        <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                                                            <a class="btn btn-bordered-white btn-smaller" href="">Participate</a>
+                                                            <!-- Social Share -->
+                                                            <div class="social-share ml-auto">
+                                                                <ul class="d-flex list-unstyled">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-telegram"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fas fa-globe"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-discord"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Blockchain Icon -->
+                                                        <div class="blockchain-icon">
+                                                            <img src="html/vertical-dark-menu/assets/img/content/ethereum-gold.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Slide -->
+                                                <div class="swiper-slide item">
+                                                    <div class="card project-card">
+                                                        <div class="media">
+                                                            <a href="">
+                                                                <img class="card-img-top avatar-max-lg" src="html/vertical-dark-menu/assets/img/cn.png" alt="">
+                                                            </a>
+                                                            <div class="media-body ml-4">
+                                                                <a href="">
+                                                                    <h4 class="m-0">Real Hunter</h4>
+                                                                </a>
+                                                                <div class="countdown-times">
+                                                                    <h6 class="my-2">Registration in:</h6>
+                                                                    <div class="countdown d-flex" data-date="2022-06-28"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Body -->
+                                                        <div class="card-body">
+                                                            <div class="items">
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Total raise</span>
+                                                                    <span style="color: white;">90k</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Valu</span>
+                                                                    <span style="color: white;">2.6M</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Min allo</span>
+                                                                    <span style="color: white;">$0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-progress">
+                                                                <div class="progress mt-4 mt-md-5">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100">27%</div>
+                                                                </div>
+                                                                <div class="progress-sale d-flex justify-content-between mt-3">
+                                                                    <span style="color: white;">0/532,399 MECHA</span>
+                                                                    <span style="color: white;">0 BUSD</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Footer -->
+                                                        <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                                                            <a class="btn btn-bordered-white btn-smaller" href="project-details.html">Participate</a>
+                                                            <!-- Social Share -->
+                                                            <div class="social-share ml-auto">
+                                                                <ul class="d-flex list-unstyled">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-telegram"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fas fa-globe"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-discord"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Blockchain Icon -->
+                                                        <div class="blockchain-icon">
+                                                            <img src="html/vertical-dark-menu/assets/img/content/solana.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Slide -->
+                                                <div class="swiper-slide item">
+                                                    <div class="card project-card">
+                                                        <div class="media">
+                                                            <a href="">
+                                                                <img class="card-img-top avatar-max-lg" src="html/vertical-dark-menu/assets/img/cn.png" alt="">
+                                                            </a>
+                                                            <div class="media-body ml-4">
+                                                                <a href="">
+                                                                    <h4 class="m-0">BitHotel</h4>
+                                                                </a>
+                                                                <div class="countdown-times">
+                                                                    <h6 class="my-2">Registration in:</h6>
+                                                                    <div class="countdown d-flex" data-date="2022-06-30"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Body -->
+                                                        <div class="card-body">
+                                                            <div class="items">
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Total raise</span>
+                                                                    <span style="color: white;">90k</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Valu</span>
+                                                                    <span style="color: white;">4.8M</span>
+                                                                </div>
+                                                                <!-- Single Item -->
+                                                                <div class="single-item">
+                                                                    <span style="color: white;">Min allo</span>
+                                                                    <span style="color: white;">$0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-progress">
+                                                                <div class="progress mt-4 mt-md-5">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">42%</div>
+                                                                </div>
+                                                                <div class="progress-sale d-flex justify-content-between mt-3">
+                                                                    <span style="color: white;">0/298,064 MECHA</span>
+                                                                    <span style="color: white;">0 BUSD</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Project Footer -->
+                                                        <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                                                            <a class="btn btn-bordered-white btn-smaller" href="project-details.html">Participate</a>
+                                                            <!-- Social Share -->
+                                                            <div class="social-share ml-auto">
+                                                                <ul class="d-flex list-unstyled">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-telegram"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fas fa-globe"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="fab fa-discord"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Blockchain Icon -->
+                                                        <div class="blockchain-icon">
+                                                            <img src="html/vertical-dark-menu/assets/img/content/ethereum-gold.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- ***** Project Area End ***** -->
+
+                            <section class="work-area" >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 ">
+                                            <div class="content intro">
+                                                <span class="intro-text">Project</span>
+                                                <h2>Multi-chain IGOs</h2>
+                                                <p>Join IGOs on multiple blockchains in a single click. Support game by providing LP or just stake the game and get rewards.</p>
+                                                <ul class="list-unstyled items mt-5">
+                                                    <li class="item">
+                                                        <!-- Content List -->
+                                                        <div class="content-list d-flex align-items-center">
+                                                            <div class="content-icon">
+                                                                <span>
+                                                                    <i class="fa-brands fa-discord"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="content-body ml-4">
+                                                                <h3 class="m-3">Submit KYC</h3>
+                                                                <p class="m-3">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <!-- Content List -->
+                                                        <div class="content-list d-flex align-items-center">
+                                                            <div class="content-icon">
+                                                                <span class="featured">
+                                                                    <i class="fa-brands fa-hotjar"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="content-body ml-4">
+                                                                <h3 class="m-3">Verify Wallet</h3>
+                                                                <p class="m-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <!-- Content List -->
+                                                        <div class="content-list d-flex align-items-center">
+                                                            <div class="content-icon">
+                                                                <span>
+                                                                    <i class="fa-solid fa-rocket"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="content-body ml-4">
+                                                                <h3 class="m-3">Start Staking</h3>
+                                                                <p class="m-3">It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>  
+                                        <div class="col-12 col-md-6">
+                                            <!-- Blockchain Animation -->
+                                            <div class="wrapper-animation">
+                                                <div class="blockchain-wrapper">
+                                                    <div class="pyramid">
+                                                        <div class="square">
+                                                            <div class="triangle"></div>
+                                                            <div class="triangle"></div>
+                                                            <div class="triangle"></div>
+                                                            <div class="triangle"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pyramid inverse">
+                                                        <div class="square">
+                                                            <div class="triangle"></div>
+                                                            <div class="triangle"></div>
+                                                            <div class="triangle"></div>
+                                                            <div class="triangle"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                 
+                                    </div>                     
+                                </div>
+                            </section>
+
+                            <!-- ***** Work Area Start ***** -->
+                        <section class="work-area" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- Intro -->
+                                        <div class="intro d-flex justify-content-between align-items-end mb-4">
+                                            <div class="intro-content">
+                                                <span class="intro-text">How It Works</span>
+                                                <h3 class="mt-3 mb-0">How To Participate</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row items">
+                                    <div class="col-md-4 col-xs-12 item">
+                                        <!-- Single Work -->
+                                        <div class="single-work">
+                                            <i class="icons icon-drawer text-effect"></i>
+                                            <h4>Submit KYC</h4>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores non provident.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 item">
+                                        <!-- Single Work -->
+                                        <div class="single-work">
+                                            <i class="icons icon-wallet text-effect"></i>
+                                            <h4>Verify Wallet</h4>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quasi architecto.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 item">
+                                        <!-- Single Work -->
+                                        <div class="single-work">
+                                            <i class="icons icon-fire text-effect"></i>
+                                            <h4>Start Staking</h4>
+                                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="cta-area p-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 card">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-12 col-md-5 text-center">
+                                                <img src="html/vertical-dark-menu/assets/img/3d.png" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                                <h2 class="m-0">Apply for IGO</h2>
+                                                <p>Get access to huge set of tools to seamlessly handle your game's integration with blockchain.</p>
+                                                <a class="btn btn-bordered active d-inline-block" href=""><i class="icon-rocket mr-2"></i>Apply Now</a>
+                                            </div>
+                                        </div>
+                                        <a class="cta-link" href=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                           <!--====== Footer Area Start ======-->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Logo -->
+              
+                            <!-- Social Icons -->
+                            <div class="social-icons d-flex justify-content-center my-4">
+                                <a class="facebook" href="" target="_blank">
+                                    <img src="html/vertical-dark-menu/assets/img/logo/tik.png" alt="">
+                                  
+                                </a>
+                                <a class="twitter" href="" target="_blank">
+                                    <img src="html/vertical-dark-menu/assets/img/logo/tw.png" alt="">
+                                </a>
+                                <a class="linkedin" href="" target="_blank">
+                                    <img src="html/vertical-dark-menu/assets/img/logo/medium.png" alt="">
+                                </a>
+                                <a class="reddit" href="" target="_blank">
+                                    <img src="html/vertical-dark-menu/assets/img/logo/wh.png" alt="">
+                                </a>
+                                <a class="vkontakte" href="" target="_blank">
+                                    <img src="html/vertical-dark-menu/assets/img/logo/git.png" alt="">
+                                </a>
+                                <a class="youtube" href="" target="_blank">
+                                    <img src="html/vertical-dark-menu/assets/img/logo/yt.png" alt="">
+                                </a>
+                            </div>
+               
+                            <!-- Copyright Area -->
+                            <div class="copyright-area py-4">&copy;2024, All Rights Reserved By <a href="" target="_blank">Launchpad </a></div>
+                        </div>
+                        <!-- Scroll To Top -->
+                        <div id="scroll-to-top" class="scroll-to-top">
+                            <a href="#about" class="smooth-anchor">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+
+                    </div>
+                </div>
+            </div>
+            <!--  BEGIN FOOTER  -->
+
+            <!--  END FOOTER  -->
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="html/src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="html/src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="html/src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="html/src/plugins/src/waves/waves.min.js"></script>
+    <script src="html/layouts/vertical-dark-menu/app.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="html/src/plugins/src/apex/apexcharts.min.js"></script>
+
+
+    <script src="html/src/assets/js/dashboard/dash_1.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+
+        <!-- jQuery(necessary for all JavaScript plugins) -->
+        <script src="html/vertical-dark-menu/assets/js/vendor/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="html/vertical-dark-menu/assets/js/vendor/popper.min.js"></script>
+        <script src="html/vertical-dark-menu/assets/js/vendor/bootstrap.min.js"></script>
+    
+        <!-- Plugins js -->
+        <script src="html/vertical-dark-menu/assets/js/vendor/all.min.js"></script>
+        <script src="html/vertical-dark-menu/assets/js/vendor/gallery.min.js"></script>
+        <script src="html/vertical-dark-menu/assets/js/vendor/slider.min.js"></script>
+        <script src="html/vertical-dark-menu/assets/js/vendor/countdown.min.js"></script>
+        <script src="html/vertical-dark-menu/assets/js/vendor/shuffle.min.js"></script>
+    
+        <!-- Active js -->
+        <script src="html/vertical-dark-menu/assets/js/main.js"></script>
+
+
+
+</body>
+</html>
