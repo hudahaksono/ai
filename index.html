@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Launchpad </title>
-    <link rel="icon" type="image/x-icon" href="html/src/assets/img/favicon.ico"/>
+    <title>VisionPad </title>
+    <link rel="icon" type="image/x-icon" href="html/vertical-dark-menu/assets/img/vr.png"/>
     <link href="html/layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="html/layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
     <script src="html/layouts/vertical-dark-menu/loader.js"></script>
@@ -22,9 +22,12 @@
     <link href="html/src/assets/css/light/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
     <link href="html/src/assets/css/dark/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xNvmj8nDlbybT/hR4DvG2K51Xb+SmDwJTRDd85OyOYB6ojBzwJ5NhX7rVsqsQkDy4/wkCrPHmlS0jW7e5Xr5Ww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="html/vertical-dark-menu/assets/css/style.css">
 
-   
+  
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
 </head>
@@ -42,11 +45,11 @@
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="index.html">
-                        <img src="html/src/assets/img/logo2.svg" >
+                        <img src="html/vertical-dark-menu/assets/img/vr.png" >
                     </a>
                 </li>
                 <li class="nav-item theme-text">
-                    <a href="index.html" class="nav-link"> Launchpad </a>
+                    <a href="index.html" class="nav-link"> VisionPad </a>
                 </li>
             </ul>
 
@@ -216,12 +219,12 @@
                     <div class="nav-logo">
                         <div class="nav-item theme-logo">
                             <a href="#">
-                                <img src="html/src/assets/img/logo.svg" class="navbar-logo" alt="logo">
+                                <img src="html/vertical-dark-menu/assets/img/vr.png" class="navbar-logo" alt="logo">
                           
                             </a>
                         </div>
                         <div class="nav-item theme-text">
-                            <a href="#" class="nav-link"> Launchpad  </a>
+                            <a href="#" class="nav-link"> VisionPad  </a>
                         </div>
                     </div>
                     <div class="nav-item sidebar-toggle">
@@ -233,18 +236,13 @@
                 <div class="shadow-bottom"></div>
                 <ul class="list-unstyled menu-categories" id="accordionExample">
                     <li class="menu active">
-                        <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                <span>Dashboard</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
+                        <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle" style=" justify-content: flex-start;">
+                            <i class="fas fa-home"></i> Home
+                            <i class="fas fa-angle-down" style="margin-left: auto;  font-size: 12px;"></i>
                         </a>
                         <ul class="collapse submenu list-unstyled show" id="dashboard" data-bs-parent="#accordionExample">
                             <li class="active">
-                                <a href="#"> Analytics </a>
+                                <a href="#"> About </a>
                             </li>
     
                         </ul>
@@ -255,308 +253,147 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#apps" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-                                <span>Apps</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
+                        <a href="#apps" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;">
+                            <i class="fas fa-rocket"></i> Launchpad
+                          
+                            <i class="fas fa-angle-down" style="margin-left: auto;  font-size: 12px;"></i>
                         </a>
                         <ul class="collapse submenu list-unstyled" id="apps" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Calendar </a>
+                                <a href="#"> Create launchpad </a>
                             </li>
                             <li>
-                                <a href="#"> Chat </a>
+                                <a href="#"> Create fair launch </a>
                             </li>
                             <li>
-                                <a href="#"> Mailbox </a>
+                                <a href="#"> Create dutch auction </a>
                             </li>
                             <li>
-                                <a href="#"> Todo List </a>
+                                <a href="#"> Create subscription </a>
                             </li>
                             <li>
-                                <a href="#"> Notes </a>
+                                <a href="#"> Create token </a>
                             </li>
                             <li>
-                                <a href="#"> Scrumboard </a>
-                            </li>
-                            <li>
-                                <a href="#"> Contacts </a>
+                                <a href="#"> Launchpad list </a>
                             </li>
                             
                         </ul>
                     </li>
 
-                    <li class="menu menu-heading">
-                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>USER INTERFACE</span></div>
-                    </li>
-
-                    
-
-                
                     <li class="menu">
-                        <a href="#" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
-                                <span>Launchpad</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
-                                <span>Widgets</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#layouts" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-                                <span>Layouts</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="layouts" data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="#"> Blank Page </a>
-                            </li>
-                            <li>
-                                <a href="#"> Empty Page </a>
-                            </li>
-                            <li>
-                                <a href="#"> Boxed </a>
-                            </li>
-                            <li>
-                                <a href="#"> Collapsed Menu </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu menu-heading">
-                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>TABLES AND FORMS</span></div>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-                                <span>Launchpad</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#datatables" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                                <span>Launchpad</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="datatables" data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="#"> Basic </a>
-                            </li>
-                            <li>
-                                <a href="#"> Striped </a>
-                            </li>
-                            <li>
-                                <a href="#"> Custom </a>
-                            </li>
-                            <li>
-                                <a href="#"> Miscellaneous </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#forms" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
-                                <span>Forms</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="forms" data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="#"> Basic </a>
-                            </li>
-                            <li>
-                                <a href="#"> Input Group </a>
-                            </li>
-                            <li>
-                                <a href="#"> Layouts </a>
-                            </li>
-                            <li>
-                                <a href="#"> Validation </a>
-                            </li>
-                           
-                        </ul>
-                    </li>
-
-                    <li class="menu menu-heading">
-                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>USER AND PAGES</span></div>
-                    </li>                    
-
-                    <li class="menu">
-                        <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                <span>Users</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="users" data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="#"> Profile </a>
-                            </li>
-                            <li>
-                                <a href="#"> Account Settings </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#pages" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                                <span>Pages</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="pages" data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="#"> Knowledge Base </a>
-                            </li>
-                            <li>
-                                <a href="#"> FAQ </a>
-                            </li>
-                            <li>
-                                <a href="#"> Contact Form </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"> Error </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"> Maintanence </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#authentication" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                                <span>Authentication</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
+                        <a href="#authentication" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;">
+                            <i class="fas fa-lock"></i> VisionPadLock
+                            <i class="fas fa-angle-down" style="margin-left: auto;  font-size: 12px;"></i>
                         </a>
                         <ul class="collapse submenu list-unstyled" id="authentication" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#" target="_blank"> Sign In </a>
+                                <a href="#" target="_blank"> Create Lock </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank"> Sign Up </a>
+                                <a href="#" target="_blank"> Token </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank"> Unlock </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"> Reset </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"> 2 Step </a>
+                                <a href="#" target="_blank"> Liquidity </a>
                             </li>
                           
                         </ul>
                     </li>
 
-                    <li class="menu menu-heading">
-                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>MISCELLANEOUS</span></div>
+                    <li class="menu">
+                        <a href="#layouts" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;">
+                            <i class="fas fa-wifi"></i> Airdrop
+                            <i class="fas fa-angle-down" style="margin-left: auto;  font-size: 12px;"></i>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="layouts" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Create Airdrop </a>
+                            </li>
+                            <li>
+                                <a href="#"> Airdrop List </a>
+                            </li>
+         
+                        </ul>
                     </li>
 
                     <li class="menu">
-                        <a href="#menuLevel1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-                                <span>Item Level</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
+                        <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" >
+                            <i class="fas fa-user"></i> Staking
+                            <i class="fas fa-angle-down" style="margin-left: auto;  font-size: 12px;"></i>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="menuLevel1" data-bs-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="users" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="javascript:void(0);"> Item Level 1a </a>
+                                <a href="#"> Create Staking </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"> Item Level 1b </a>
-                            </li>
-
-                            <li>
-                                <a href="#level-three" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed"> Item Level 1c <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
-                                <ul class="collapse list-unstyled sub-submenu" id="level-three" data-bs-parent="#pages"> 
-                                    <li>
-                                        <a href="javascript:void(0);"> Item Level 2a </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"> Item Level 2b </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"> Item Level 2c </a>
-                                    </li>
-                                </ul>
+                                <a href="#"> Staking List </a>
                             </li>
                         </ul>
                     </li>
 
 
+
+
                     <li class="menu">
-                        <a href="javascript:void(0);" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-                                <span>Item Label</span>
-                                <span class="badge badge-primary sidebar-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle badge-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> New</span>
-                            </div>
-                        </a>
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" > <i class="fas fa-shield"></i> Private Sale</a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-coins"></i>Buy Crypto Fiat</a>
                     </li>
                     
                     <li class="menu">
-                        <a href="#" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                                <span>Documentation</span>
-                            </div>
-                        </a>
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-shuffle"></i>Bridge</a>
                     </li>
+
                     <li class="menu">
-                        <a  href="#" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hash"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
-                                <span>Changelog</span>
-                            </div>
-                        </a>
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-crown"></i>Leaderboard</a>
                     </li>
-                    
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-shield-virus"></i>Anti-Bot</a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-paper-plane"></i>Multi-Sender</a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-chart-line"></i>Dexview.com</a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-bell"></i>Pools Alert</a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-folder"></i>KYC & Audit</a>
+                    </li>
+
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-file"></i>Docs</a>
+                    </li>
+
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-cart-shopping"></i>Shop</a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-circle-dot"></i>Telegram</a>
+                    </li>
+
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-circle-dot"></i>Twitter</a>
+                    </li>
+
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle" style=" justify-content: flex-start;" ><i class="fas fa-circle-dot"></i>Facebook</a>
+                    </li>
+ 
                 </ul>
                 
             </nav>
@@ -585,8 +422,8 @@
                         
                                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                                             <ol class="breadcrumb">
-                                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Analytics</li>
+                                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">About</li>
                                             </ol>
                                         </nav>
                         
@@ -607,14 +444,14 @@
                                         <!-- Hero Content -->
                                         <div class="hero-content">
                                             <div class="intro text-center mb-5">
-                                                <span class="intro-text">Launchpad </span>
-                                                <h1 class="mt-4">The Next Generation Web 3.0 IGO Launchpad</h1>
+                                                <span class="intro-text">VisionPad </span>
+                                                <h1 class="mt-4">The Next Generation Web 3.0 IGO VisionPad</h1>
                                                 <p>Full-scale Blockchain Gaming Ecosystem for IGOs &amp; NFT Pre-Sales</p>
                                             </div>
                                             <!-- Buttons -->
                                             <div class="button-group">
-                                                <a class="btn btn-bordered-white" href=""><i class="icon-rocket mr-2"></i>Explore IGOs</a>
-                                                <a class="btn btn-bordered-white" href=""><i class="icon-note mr-2"></i>Apply Now</a>
+                                                <a class="btn btn-bordered-white" href=""><i class="icon-rocket mr-2"></i>Create Now</a>
+                                                <a class="btn btn-bordered-white" href=""><i class="icon-note mr-2"></i>Learn More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1181,6 +1018,63 @@
                             </div>
                         </section>
 
+                        <section class="who_we_are_section position-relative">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="who_we_are_left_content" data-aos="fade-up">
+                                            <h6 class="text-white">Who We ARe</h6>
+                                            <h2 class="text-white">Artificial Intelligence is The New Big Thing in Technology</h2>
+                                            <p>Nam libero tempore, cum soluta nobis est eligendi optiona cumue nihil impedit quo minus id quod maxime placeat fae possimus necessitatibus,</p>
+                                            <div class="btn_wrapper"> 
+                                                <a class="text-decoration-none default-btn-two btn-size-18 hover-effect" href="">Get Started<i class="fa-solid fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12"></div>
+                                    <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="who_we_are_right_content_wrapper">
+                               
+                                            <div class="who_we_are_right_content">
+                                                <div class="who_we_are_rightside">
+                                                    <span>4.6</span>
+                                                    <ul class="list-unstyled">
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                    </ul>
+                                                    <h6 class="review">Google Reviews</h6>                                                
+                                                </div>
+                                                <div class="who_we_are_rightside second_column">
+                                                    <span>4.9</span>
+                                                    <ul class="list-unstyled">
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                        <li><i class="fa-solid fa-star" style="color: yellow;"></i></li>
+                                                    </ul>
+                                                    <h6 class="review">Clutch Reviews</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figure class="who_we_are_image position-absolute mb-0">
+                                    <img src="html/vertical-dark-menu/assets/img/content/ai2.png" alt="" class="img-fluid">
+                                </figure>
+                                <figure class="who_we_are_left_shape mb-0 position-absolute top_bottom_shape">
+                                    <img src="html/vertical-dark-menu/assets/img/content/who_we_are_left_shape.png" alt="" class="img-fluid">
+                                </figure>
+                                <figure class="who_we_are_right_shape mb-0 position-absolute top_bottom_shape">
+                                    <img src="html/vertical-dark-menu/assets/img/content/who_we_are_right_shape.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </section>
+
+
                         <section class="cta-area p-0">
                             <div class="container">
                                 <div class="row">
@@ -1202,50 +1096,50 @@
                         </section>
 
                            <!--====== Footer Area Start ======-->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 text-center">
-                        <!-- Footer Items -->
-                        <div class="footer-items">
-                            <!-- Logo -->
-              
-                            <!-- Social Icons -->
-                            <div class="social-icons d-flex justify-content-center my-4">
-                                <a class="facebook" href="" target="_blank">
-                                    <img src="html/vertical-dark-menu/assets/img/logo/tik.png" alt="">
-                                  
-                                </a>
-                                <a class="twitter" href="" target="_blank">
-                                    <img src="html/vertical-dark-menu/assets/img/logo/tw.png" alt="">
-                                </a>
-                                <a class="linkedin" href="" target="_blank">
-                                    <img src="html/vertical-dark-menu/assets/img/logo/medium.png" alt="">
-                                </a>
-                                <a class="reddit" href="" target="_blank">
-                                    <img src="html/vertical-dark-menu/assets/img/logo/wh.png" alt="">
-                                </a>
-                                <a class="vkontakte" href="" target="_blank">
-                                    <img src="html/vertical-dark-menu/assets/img/logo/git.png" alt="">
-                                </a>
-                                <a class="youtube" href="" target="_blank">
-                                    <img src="html/vertical-dark-menu/assets/img/logo/yt.png" alt="">
-                                </a>
+                        <footer class="footer-area">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-8 text-center">
+                                        <!-- Footer Items -->
+                                        <div class="footer-items">
+                                            <!-- Logo -->
+                            
+                                            <!-- Social Icons -->
+                                            <div class="social-icons d-flex justify-content-center my-4">
+                                                <a class="facebook" href="" target="_blank">
+                                                    <img src="html/vertical-dark-menu/assets/img/logo/tik.png" alt="">
+                                                
+                                                </a>
+                                                <a class="twitter" href="" target="_blank">
+                                                    <img src="html/vertical-dark-menu/assets/img/logo/tw.png" alt="">
+                                                </a>
+                                                <a class="linkedin" href="" target="_blank">
+                                                    <img src="html/vertical-dark-menu/assets/img/logo/medium.png" alt="">
+                                                </a>
+                                                <a class="reddit" href="" target="_blank">
+                                                    <img src="html/vertical-dark-menu/assets/img/logo/wh.png" alt="">
+                                                </a>
+                                                <a class="vkontakte" href="" target="_blank">
+                                                    <img src="html/vertical-dark-menu/assets/img/logo/git.png" alt="">
+                                                </a>
+                                                <a class="youtube" href="" target="_blank">
+                                                    <img src="html/vertical-dark-menu/assets/img/logo/yt.png" alt="">
+                                                </a>
+                                            </div>
+                            
+                                            <!-- Copyright Area -->
+                                            <div class="copyright-area py-4">&copy;2024, All Rights Reserved By <a href="" target="_blank">VisionPad </a></div>
+                                        </div>
+                                        <!-- Scroll To Top -->
+                                        <div id="scroll-to-top" class="scroll-to-top">
+                                            <a href="#about" class="smooth-anchor">
+                                                <i class="fa-solid fa-arrow-up"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-               
-                            <!-- Copyright Area -->
-                            <div class="copyright-area py-4">&copy;2024, All Rights Reserved By <a href="" target="_blank">Launchpad </a></div>
-                        </div>
-                        <!-- Scroll To Top -->
-                        <div id="scroll-to-top" class="scroll-to-top">
-                            <a href="#about" class="smooth-anchor">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                        </footer>
         <!--====== Footer Area End ======-->
 
                     </div>

@@ -2952,3 +2952,411 @@ a.page-numbers:hover {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+.who_we_are_section {
+  background-color: var(--e-global-color-bright-blue);
+  padding: 168px 130px 175px 240px;
+  overflow: hidden;
+}
+.who_we_are_section .who_we_are_left_content {
+  position: relative;
+  z-index: 1;
+}
+.who_we_are_section .who_we_are_left_content h6 {
+  letter-spacing: 1.1px;
+  margin-bottom: 20px;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+  margin-bottom: 42px;
+  font-size: 42px;
+  line-height: 60px;
+}
+.who_we_are_section .who_we_are_left_content p {
+  margin-bottom: 34px;
+  color: var(--e-global-color-light-grayish-blue);
+}
+.who_we_are_section .who_we_are_image {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.who_we_are_section .who_we_are_left_shape {
+  top: -310px;
+  left: 0;
+}
+.who_we_are_section .who_we_are_left_shape img {
+  opacity: 0.2;
+}
+.who_we_are_section .who_we_are_right_shape {
+  bottom: -300px;
+  right: 0;
+}
+.who_we_are_section .who_we_are_right_shape img {
+  opacity: 0.2;
+}
+.who_we_are_section .who_we_are_right_content_wrapper {
+  margin-left: -152px;
+}
+.who_we_are_section .video_wrapper {
+  top: 22px;
+  left: -138px;
+  z-index: 2;
+}
+.who_we_are_section .video_wrapper .video_icon {
+  float: left;
+  width: 45%;
+}
+.who_we_are_section .video_wrapper .content {
+  display: inline-block;
+  width: 55%;
+  padding: 45px 0 0 8px;
+}
+.who_we_are_section .who_we_are_right_content {
+  padding-top: 190px;
+  position: relative;
+  z-index: 1;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside {
+  display: inline-block;
+  width: 44%;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: 700;
+  display: block;
+  color: var(--e-global-color-white);
+  margin-bottom: 10px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul {
+  margin-bottom: 14px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul li {
+  display: inline-block;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul li i {
+  color: #fcbf56;
+  font-size: 14px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside h6 {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--e-global-color-white);
+  margin-bottom: 0;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside p {
+  color: var(--e-global-color-light-grayish-blue);
+} 
+
+.who_we_are_section .video_wrapper .video_icon {
+  float: left;
+  width: 45%;
+}
+
+.about_aboutus_section .aboutus_content .video_fig {
+  position: relative;
+  z-index: 1;
+}
+.about_aboutus_section .aboutus_content .video_fig img {
+  border-radius: 35px;
+}
+.about_aboutus_section .aboutus_content .about_video_background_shape {
+  top: -50px;
+  left: 0;
+}
+
+@media screen and (max-width: 1440px){
+
+  .who_we_are_section {
+    padding: 168px 10px 175px 45px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside {
+    width: 48%;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+    font-size: 30px;
+    line-height: 52px;
+}
+
+  .who_we_are_section {
+    padding: 65px 15px 70px;
+}
+.who_we_are_section .who_we_are_left_content {
+    margin-bottom: 150px;
+}
+.who_we_are_section .who_we_are_left_content h6 {
+    margin-bottom: 10px;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 12px;
+    padding: 0 40px;
+}
+.who_we_are_section .who_we_are_left_content p {
+    margin-bottom: 22px;
+}
+.who_we_are_section .video_wrapper .video_icon img {
+    width: 95px;
+}
+.who_we_are_section .video_wrapper .content {
+    padding: 40px 0 0 8px;
+}
+.who_we_are_section .who_we_are_right_content {
+    padding-top: 50px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside span {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 5px;
+}
+.who_we_are_section .who_we_are_right_content .second_column {
+    padding-left: 24px;
+}
+.who_we_are_section .video_wrapper {
+    top: -90px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul {
+    margin-bottom: 10px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul li i {
+    font-size: 12px;
+}
+.who_we_are_section .who_we_are_image img {
+    width: 500px;
+}
+.who_we_are_section .who_we_are_left_shape img {
+    width: 370px;
+}
+.who_we_are_section .who_we_are_right_shape img {
+    width: 400px;
+}
+}
+
+
+
+
+@media screen and (max-width: 767px){
+.who_we_are_section {
+  padding: 55px 15px 60px;
+}
+.who_we_are_section .who_we_are_left_content {
+  margin-bottom: 145px;
+}
+.who_we_are_section .who_we_are_left_content h6 {
+  margin-bottom: 5px;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.who_we_are_section .who_we_are_left_content p {
+  margin-bottom: 20px;
+}
+.who_we_are_section .video_wrapper {
+  top: -135px;
+}
+.who_we_are_section .who_we_are_right_content {
+  padding-top: 40px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside {
+  width: 32%;
+  top: -30px;
+  position: relative;
+}
+.who_we_are_section .who_we_are_right_content .second_column {
+  padding-left: 12px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside span {
+  font-size: 28px;
+  line-height: 32px;
+}
+.who_we_are_section .who_we_are_image img {
+  width: 470px;
+}
+.who_we_are_section .who_we_are_left_shape {
+  display: none;
+}
+.who_we_are_section .who_we_are_right_shape {
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 575px){
+
+.who_we_are_section .who_we_are_left_content {
+  margin-bottom: 60px;
+}
+.who_we_are_section .who_we_are_left_content h6 {
+  margin-bottom: 5px;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.who_we_are_section .video_wrapper {
+  top: -50px;
+}
+.who_we_are_section .who_we_are_left_content p {
+  margin-bottom: 18px;
+}
+.who_we_are_section .who_we_are_right_content {
+  padding-top: 55px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside {
+  width: 30%;
+  top: 10px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside span {
+  font-size: 24px;
+  line-height: 28px;
+}
+.who_we_are_section .who_we_are_right_content .second_column {
+  padding-left: 0;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul {
+  margin-bottom: 8px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul li i {
+  font-size: 10px;
+}
+.who_we_are_section .who_we_are_image img {
+  width: 275px;
+}
+}
+
+@media screen and (max-width: 1199px){
+
+
+.who_we_are_section {
+  padding: 90px 22px 100px;
+}
+.who_we_are_section .who_we_are_left_content {
+  text-align: center;
+  margin-bottom: 150px;
+}
+.who_we_are_section .who_we_are_left_content h6 {
+  margin-bottom: 15px;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+  line-height: 46px;
+  margin-bottom: 15px;
+  padding: 0 35px;
+}
+.who_we_are_section .who_we_are_left_content p {
+  margin-bottom: 25px;
+}
+.who_we_are_section .who_we_are_image img {
+  width: 550px;
+}
+
+.who_we_are_section .who_we_are_right_content {
+  padding-top: 60px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside {
+  width: 25%;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside span {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul {
+  margin-bottom: 12px;
+}
+.who_we_are_section .who_we_are_right_content .second_column {
+  float: right;
+  padding-left: 50px;
+}
+.who_we_are_section .video_wrapper {
+  left: 0;
+  top: -100px;
+}
+.who_we_are_section .who_we_are_right_content_wrapper {
+  margin-left: 0;
+}
+.who_we_are_section .who_we_are_left_shape img {
+  width: 390px;
+}
+.who_we_are_section .who_we_are_right_shape {
+  bottom: -410px;
+}
+}
+
+@media screen and (max-width: 991px){
+  .who_we_are_section {
+    padding: 65px 15px 70px;
+}
+.who_we_are_section .who_we_are_left_content {
+    margin-bottom: 150px;
+}
+.who_we_are_section .who_we_are_left_content h6 {
+    margin-bottom: 10px;
+}
+.who_we_are_section .who_we_are_left_content h2 {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 12px;
+    padding: 0 40px;
+}
+.who_we_are_section .who_we_are_left_content p {
+    margin-bottom: 22px;
+}
+.who_we_are_section .video_wrapper .video_icon img {
+  top: 100px;
+    width: 55px;
+}
+.who_we_are_section .video_wrapper .content {
+    padding: 40px 0 0 8px;
+}
+.who_we_are_section .who_we_are_right_content {
+    padding-top: 50px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside span {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.who_we_are_section .who_we_are_right_content .second_column {
+    padding-left: 1px;
+}
+.who_we_are_section .video_wrapper {
+    top: 100px;
+}
+
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul {
+  font-size: 0px;
+    margin-bottom: 10px;
+}
+.who_we_are_section .who_we_are_right_content .who_we_are_rightside ul li i {
+    font-size: 6px;
+}
+.who_we_are_section .who_we_are_image img {
+    width: 400px;
+}
+.who_we_are_section .who_we_are_left_shape img {
+    width: 370px;
+}
+.who_we_are_section .who_we_are_right_shape img {
+    width: 400px;
+}
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Untuk memusatkan ikon dan teks */
+}
+
+.icon {
+  margin-bottom: 5px; /* Jarak antara ikon dan teks */
+}
